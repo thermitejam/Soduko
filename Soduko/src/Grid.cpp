@@ -18,7 +18,7 @@ void Grid::test()
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			m_blocks[i][j]->getCell(i,j)->SetNumber(5);
+			m_blocks[i][j]->getCell(i,j)->SetNumber(5); //test
 		}
 	}
 	
