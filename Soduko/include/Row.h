@@ -13,7 +13,8 @@ public:
 	Row();
 	~Row();
 
-	void setCellArray(Cell cells[9]);
+	void setCell(int number, Cell *cell);
+	std::vector<int> numbersPresentList();
 	std::vector<int> checkRowFull();
-	
+
 };

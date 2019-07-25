@@ -1,7 +1,11 @@
-﻿  Grid.cpp
-e:\programming\soduko\soduko\src\grid.cpp(10): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+﻿  Game.cpp
+  Grid.cpp
+e:\programming\soduko\soduko\src\grid.cpp(11): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
+  Main.cpp
+  Row.cpp
+  Generating Code...
   Soduko.vcxproj -> E:\Programming\Soduko\x64\Debug\Soduko.exe

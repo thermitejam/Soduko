@@ -7,16 +7,17 @@
 class Grid : public sf::Drawable 
 {
 private:
-	Block *m_blocks[3][3];
-	Row m_horisontal[9];
-	Row m_verticle[9];
+	Cell m_Grid[9][9];
+	Block m_blocks[3][3]; // the 9 large squares on the soduko grid
+	Row m_horisontal[9]; // each line in the grid horrisontally
+	Row m_verticle[9]; // each line in the grid vertically
 
 protected:
 
 public:
 	Grid();
-	void test();
-	void setFonts(sf::Font *fontSet);
-	void update();
+	void test(); // a function for testing
+	void setFonts(sf::Font *fontSet); // sets the front of the cells
+	void update(); // the update function
 	void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 };

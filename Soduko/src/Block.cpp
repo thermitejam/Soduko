@@ -3,50 +3,19 @@
 Block::Block()
 {
 	
-	for (int i = 0; i < 3; i++) 
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			m_CellArray[i][j] = new Cell; // creates a new cell for each pointer
-		}
-	}
-
-}
-
-Block::Block(sf::Vector2f(position))
-{
 	
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			m_CellArray[i][j] = new Cell (sf::Vector2f(i * 100  + position.x,j * 100 + position.y)); // creates a new cell for each pointer
-		}
-	}
+
 }
+
+
 
 Block::~Block()
 {
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			delete m_CellArray[i][j]; // deletes all the pointers to the cells
-		}
-	}
+
 
 }
 
-void Block::setFonts(sf::Font *fontSet)
-{
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			m_CellArray[i][j]->setFont(fontSet);
-		}
-	}
-}
+
 
 std::vector<int> Block::numbersPresentList()
 {
@@ -78,7 +47,7 @@ std::vector<int> Block::checkBlockFull()
 		{
 			missingNumbers.push_back(i + 1); // adds the missing number to the back of the missing numbers return vector
 			//
-			std::cout << i + 1 << std::endl;
+			//std::cout << i + 1 << std::endl;
 			//
 		}
 	}
@@ -95,25 +64,14 @@ Cell *Block::getCell(int x, int y)
 	return m_CellArray[0][0]; // THIS NEEDS CHANGING
 }
 
+void Block::setCell(int x, int y, Cell * cell)
+{
+	m_CellArray[x][y] = cell;
+}
+
 void Block::update()
 {
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			m_CellArray[i][j]->update();
-		}
-	}
-}
-
-void Block::draw(sf::RenderTarget & target, sf::RenderStates states) const
-{
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			target.draw(*m_CellArray[i][j]);
-		}
-	}
 
 }
+
+

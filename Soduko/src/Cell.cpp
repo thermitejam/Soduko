@@ -82,6 +82,7 @@ sf::Vector2f Cell::getPosition()
 
 void Cell::update()
 {
+	m_numberText.setPosition(m_position);
 	m_textRect = m_numberText.getLocalBounds();
 	m_numberText.setOrigin(m_textRect.left + m_textRect.width / 2.0f, m_textRect.top + m_textRect.height / 2.0f);
 }

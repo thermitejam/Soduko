@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 
-class Block : public sf::Drawable
+class Block
 {
 
 private:
@@ -17,10 +17,8 @@ protected:
 public:
 
 	Block();
-	Block(sf::Vector2f(position));
 	~Block();
 
-	void setFonts(sf::Font *fontSet);
 
 	std::vector<int> numbersPresentList();
 
@@ -28,7 +26,8 @@ public:
 
 	Cell *getCell(int x, int y);
 
+	void setCell(int x, int y,Cell *cell);
+
 	void update();
-	void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 
 };
