@@ -6,7 +6,6 @@ class Row
 {
 private:
 	Cell *m_CellArray[9];
-	bool m_Verticle;
 protected:
 
 public:

@@ -131,18 +131,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Block.cpp" />
+    <ClCompile Include="src\Button.cpp" />
     <ClCompile Include="src\Cell.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Grid.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\NumberSquare.cpp" />
     <ClCompile Include="src\Row.cpp" />
+    <ClCompile Include="src\SelectionRow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Block.h" />
+    <ClInclude Include="include\Button.h" />
     <ClInclude Include="include\Cell.h" />
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\Grid.h" />
+    <ClInclude Include="include\NumberSquare.h" />
     <ClInclude Include="include\Row.h" />
+    <ClInclude Include="include\SelectionRow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

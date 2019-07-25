@@ -8,7 +8,7 @@ Grid::Grid()
 	{
 		for (int j = 0; j < 9; j++)
 		{
-			m_Grid[i][j].setPosiiton(sf::Vector2f(i * 100 + 50, j * 100 + 50));
+			m_Grid[i][j].setPosition(sf::Vector2f(i * 100 + 50, j * 100 + 50));
 			m_Grid[i][j].SetNumber(i + 1);
 			
 			
@@ -85,7 +85,7 @@ void Grid::setFonts(sf::Font *fontSet)
 		for (int j = 0; j < 9; j++)
 		{
 			m_Grid[i][j].setFont(fontSet);
-
+			m_Grid[i][j].updateNumber();
 		}
 	}
 
@@ -97,7 +97,8 @@ void Grid::update()
 	{
 		for (int j = 0; j < 9; j++)
 		{
-			m_Grid[i][j].update();
+			
+
 
 		}
 	}
